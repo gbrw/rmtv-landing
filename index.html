@@ -576,50 +576,67 @@
             }
         }
 
-                    @media (max-width: 640px) {
-            .hero {
-                padding: 90px 16px 50px;
-            }
+    @media (max-width: 640px) {
 
-            .hero-title {
-                font-size: 40px;
-            }
+  /* ====== الهيدر (موبايل فقط) ====== */
+  .nav {
+    padding: 8px 0;
+  }
 
-            .hero-description {
-                font-size: 18px;
-            }
+  .nav-content {
+    justify-content: center;
+    padding: 0 16px;
+  }
 
-            .section {
-                padding: 80px 24px;
-            }
+  .nav-content > img {
+    width: 90px;
+    margin: 0 auto;
+  }
 
-            .section-title {
-                font-size: 36px;
-            }
+  .nav-links {
+    display: none;
+  }
 
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
+  /* ====== رجّع البنر مثل قبل ====== */
+  .hero {
+    padding: 120px 24px 80px; /* رجعناه مثل الكود الأصلي */
+  }
 
-            .nav-links {
-                display: none;
-            }
+  .hero-title {
+    font-size: 40px; /* مثل الأصلي */
+  }
 
-            .hero-logo-placeholder {
-                width: 100px;
-                height: 100px;
-                margin-bottom: 16px;
-            }
+  .hero-description {
+    font-size: 18px; /* مثل الأصلي */
+  }
 
-            .download-icon-placeholder {
-                width: 100px;
-                height: 100px;
-            }
+  .section {
+    padding: 80px 24px;
+  }
 
-            .channel-icon {
-                width: 100px;
-                height: 100px;
-            }
+  .section-title {
+    font-size: 36px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-logo-placeholder {
+    width: 150px;   /* رجعناه مثل الأصلي */
+    height: 150px;  /* رجعناه مثل الأصلي */
+  }
+
+  .download-icon-placeholder {
+    width: 100px;
+    height: 100px;
+  }
+
+  .channel-icon {
+    width: 100px;
+    height: 100px;
+  }
+}
         }
     </style>
 </head>
