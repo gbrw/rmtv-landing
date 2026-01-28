@@ -12,25 +12,28 @@
             box-sizing: border-box;
         }
 
-        @font-face {
-  font-family: 'AppFont';
-  src: url('assets/appfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-  font-family: 'AppFont', 'Inter', sans-serif;
-  background: #0A0E27;
-  color: #E4E7EC;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-
-        img{
-       width: 120px;
-        height: 120px;
+                @font-face {
+          font-family: 'AppFont';
+          src: url('assets/appfont.ttf') format('truetype');
+          font-weight: normal;
+          font-style: normal;
         }
+        
+        img{
+          max-width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        
+        body {
+          font-family: 'AppFont', 'Inter', sans-serif;
+          background: #0A0E27;
+          color: #E4E7EC;
+          line-height: 1.6;
+          -webkit-font-smoothing: antialiased;
+        }
+
         .nav {
             position: fixed;
             top: 0;
@@ -125,6 +128,34 @@ body {
             border-radius: 50%;
             animation: pulse 2s ease-in-out infinite;
         }
+
+        .nav-content > img{
+          width: 140px;         
+          height: auto;
+          object-fit: contain;
+        }
+        
+        .hero-logo-placeholder img{
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          border-radius: 18px;
+        }
+        
+        .download-icon-placeholder img{
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          border-radius: 12px;
+        }
+        
+        .channel-icon img{
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          border-radius: 12px;
+        }
+
 
         @keyframes pulse {
             0%, 100% { opacity: 1; }
